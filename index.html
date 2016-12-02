@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Primer APP</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet"   href="css/jquery.mobile-1.4.5.min.css"/>
+     <link rel="stylesheet"  href="css/jquery.mobile.theme-1.4.5.min.css"/>
+      <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+      <script src="phonegap.js"></script>
+      <script src="js/jquery-1.11.1.min.js"></script>
+      <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+
+
+</head>
+
+<body>
+	
+<!-- Start of first page -->
+<div data-role="page" id="foo">
+
+	<div data-role="header">
+		<h1>Foo</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>I'm first in the source order so I'm shown as the page.</p>
+
+      <a href="#bar" data-transition=“turn” class="ui-btn ui-icon-delete ui-btn-icon-left">Siguiente</a>
+
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Start of second page -->
+<div data-role="page" id="bar">
+
+	<div data-role="header">
+		<h1>Bar</h1>
+		<!-- Se agrego esto texto  -->
+    <a href="#Foo"  data-role="button" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-left ui-corner-all ui-btn-right" >Contacto</a>
+
+
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+
+		<a href="#foo" class="ui-btn ui-icon-delete ui-btn-icon-lefttt">Anterior</a>
+      
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>>
